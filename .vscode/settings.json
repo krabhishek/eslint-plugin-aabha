@@ -10,14 +10,9 @@
   "eslint.workingDirectories": [
     ".",
     {
-      "pattern": "./aabha"
-    },
-    {
       "pattern": "./eslint-plugin-aabha"
     },
-    {
-      "pattern": "./aabha/examples/ogpgy-bank"
-    }
+
   ],
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": "explicit"

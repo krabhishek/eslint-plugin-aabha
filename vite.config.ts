@@ -1,24 +1,19 @@
 /// <reference types='vitest' />
-import { defineConfig } from 'vite';
+import { defineConfig, type PluginOption } from 'vite';
 import dts from 'vite-plugin-dts';
 import * as path from 'path';
 
 export default defineConfig(() => ({
   root: __dirname,
   cacheDir:
-    '../node_modules/.vite/packages/eslint-plugin-aabha',
+    './node_modules/.vite/packages/eslint-plugin-aabha',
   plugins: [
     dts({
       entryRoot: 'src',
       tsconfigPath: path.join(__dirname, 'tsconfig.lib.json'),
-    }),
+    }) as PluginOption,
   ],
-  // Uncomment this if you are using workers.
-  // worker: {
-  //  plugins: [ nxViteTsPaths() ],
-  // },
-  // Configuration for building your library.
-  // See: https://vitejs.dev/guide/build.html#library-mode
+
   build: {
     outDir: './dist',
     emptyOutDir: true,
@@ -42,7 +37,7 @@ export default defineConfig(() => ({
         '@typescript-eslint/utils',
         '@typescript-eslint/parser',
         '@typescript-eslint/rule-tester',
-        'aabha-schema',
+     
         /^node:.*/,  // Externalize all Node.js built-in modules
       ],
     },

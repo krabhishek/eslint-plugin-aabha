@@ -1,13 +1,13 @@
 {
   "extends": "./tsconfig.base.json",
-  "compileOnSave": false,
   "files": [],
+  "include": [],
   "references": [
     {
-      "path": "./aabha/tsconfig.json"
+      "path": "./tsconfig.lib.json"
     },
     {
-      "path": "./eslint-plugin-aabha/tsconfig.json"
+      "path": "./tsconfig.spec.json"
     }
   ]
 }
