@@ -38,12 +38,11 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/krabhishek/aabha.git",
-    "directory": "eslint-plugin-aabha"
+    "url": "https://github.com/krabhishek/eslint-plugin-aabha.git"
   },
-  "homepage": "https://github.com/krabhishek/aabha/tree/main/eslint-plugin-aabha#readme",
+  "homepage": "https://github.com/krabhishek/eslint-plugin-aabha#readme",
   "bugs": {
-    "url": "https://github.com/krabhishek/aabha/issues"
+    "url": "https://github.com/krabhishek/eslint-plugin-aabha/issues"
   },
   "engines": {
     "node": ">=18.0.0"
